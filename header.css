@@ -307,9 +307,9 @@ a {
   justify-content: center;
 }
 
-@media (max-width:750px) and (min-width:300px) {
+@media (max-width:750px) and (min-width:350px) {
   html {
-    font-size: 64.5%;
+    font-size: 54.5%;
   }
 
   .heading-primary--sub {
