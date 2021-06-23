@@ -307,9 +307,63 @@ a {
   justify-content: center;
 }
 
-@media (max-width:750px) and (min-width:350px) {
+@media (max-width:750px) and (min-width:400px) {
   html {
     font-size: 54.5%;
+  }
+
+  .heading-primary--sub {
+    padding-top: 2rem;
+    display: block;
+    font-size: 2rem;
+    font-weight: 70rem;
+    letter-spacing: 1.74rem;
+    animation-name: moveInright;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  .heading-primary--main {
+    display: block;
+    margin-top: 5rem;
+    font-size: 4rem;
+    font-weight: 10rem;
+    letter-spacing: 3.5rem;
+    animation-name: moveInleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* animation-delay: 3s;
+        animation-iteration-count: 3;
+         */
+  }
+
+  .heading-secondary {
+    font-size: 2.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    letter-spacing: .2rem;
+    margin-bottom: 10rem;
+  }
+  .sort-button {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+  }
+
+  .arraybtn {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width:400px) and (min-width:300px) {
+  html {
+    font-size: 46.5%;
   }
 
   .heading-primary--sub {
