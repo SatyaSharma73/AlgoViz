@@ -307,7 +307,7 @@ a {
   justify-content: center;
 }
 
-@media (max-width:750px) and (min-width:500px) {
+@media (max-width:750px) and (min-width:360px) {
   html {
     font-size: 48.5%;
   }
@@ -325,8 +325,8 @@ a {
 
   .heading-primary--main {
     display: block;
-    padding-top: 2rem;
-    font-size: 6rem;
+    margin-top: 5rem;
+    font-size: 4rem;
     font-weight: 10rem;
     letter-spacing: 3.5rem;
     animation-name: moveInleft;
