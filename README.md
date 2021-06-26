@@ -30,4 +30,14 @@ Sorting Algorithm Visualizer is a Web-enabled,Responsive, Mobile compatible
 ![2](https://user-images.githubusercontent.com/71933842/123501186-a6e28680-d660-11eb-873c-cfb6414ce913.JPG)
 ![3](https://user-images.githubusercontent.com/71933842/123501187-a813b380-d660-11eb-838d-a1ad6117d11b.JPG)
 
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 
