@@ -30,9 +30,9 @@ async function merge(ele, low, mid, high){
         await waitforme(delay);
         console.log('In merge while loop');
         console.log(parseInt(left[i]), parseInt(right[j]));
-        
+
         // To add color for which two r being compared for merging
-        
+
         if(parseInt(left[i]) <= parseInt(right[j])){
             console.log('In merge while loop if');
             // color
@@ -42,7 +42,7 @@ async function merge(ele, low, mid, high){
             else{
                 ele[k].style.background = 'lightgreen';
             }
-            
+
             ele[k].style.height = left[i];
             i++;
             k++;
@@ -55,7 +55,7 @@ async function merge(ele, low, mid, high){
             }
             else{
                 ele[k].style.background = 'lightgreen';
-            } 
+            }
             ele[k].style.height = right[j];
             j++;
             k++;
@@ -104,8 +104,10 @@ async function mergeSort(ele, l, r){
     await merge(ele, l, m, r);
 }
 
+var audio5 = new Audio('game.mp3');
 const mergeSortbtn = document.querySelector(".mergeSort");
 mergeSortbtn.addEventListener('click', async function(){
+    audio5.play();
     let ele = document.querySelectorAll('.bar');
     let l = 0;
     let r = parseInt(ele.length) - 1;
@@ -116,6 +118,8 @@ mergeSortbtn.addEventListener('click', async function(){
     enableSortingBtn();
     enableSizeSlider();
     enableNewArrayBtn();
+
+
+    audio5.pause();
+    audio5.currentTime = 0;
 });
-
-

@@ -31,9 +31,10 @@ async function insertion(){
         ele[i].style.background = 'green';
     }
 }
-
+var audio3 = new Audio('aekasora.mp3');
 const inSortbtn = document.querySelector(".insertionSort");
 inSortbtn.addEventListener('click', async function(){
+    audio3.play();
     disableSortingBtn();
     disableSizeSlider();
     disableNewArrayBtn();
@@ -41,6 +42,8 @@ inSortbtn.addEventListener('click', async function(){
     enableSortingBtn();
     enableSizeSlider();
     enableNewArrayBtn();
+
+
+        audio3.pause();
+        audio3.currentTime = 0;
 });
-
-

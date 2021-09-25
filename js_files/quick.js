@@ -15,7 +15,7 @@ async function partitionLomuto(ele, l, r){
             console.log('In partitionLomuto for j if');
             i++;
             swap(ele[i], ele[j]);
-            // color 
+            // color
             ele[i].style.background = 'orange';
             if(i != j) ele[j].style.background = 'orange';
             // pauseChamp
@@ -26,7 +26,7 @@ async function partitionLomuto(ele, l, r){
             ele[j].style.background = 'pink';
         }
     }
-    i++; 
+    i++;
     // pauseChamp
     await waitforme(delay);
     swap(ele[i], ele[r]); // pivot height one
@@ -37,7 +37,7 @@ async function partitionLomuto(ele, l, r){
 
     // pauseChamp
     await waitforme(delay);
-    
+
     // color
     for(let k = 0; k < ele.length; k++){
         if(ele[k].style.background != 'green')
@@ -62,9 +62,10 @@ async function quickSort(ele, l, r){
     }
 }
 
-
+var audio4 = new Audio('kira.mp3');
 const quickSortbtn = document.querySelector(".quickSort");
 quickSortbtn.addEventListener('click', async function(){
+  audio4.play();
     let ele = document.querySelectorAll('.bar');
     let l = 0;
     let r = ele.length - 1;
@@ -75,4 +76,7 @@ quickSortbtn.addEventListener('click', async function(){
     enableSortingBtn();
     enableSizeSlider();
     enableNewArrayBtn();
+
+    audio4.pause();
+    audio4.currentTime = 0;
 });

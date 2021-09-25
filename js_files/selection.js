@@ -19,23 +19,26 @@ async function selection(){
                     ele[min_index].style.background = 'cyan';
                 }
                 min_index = j;
-            } 
+            }
             else{
                 // if the currnent comparision is more than min_index change is back to normal
                 ele[j].style.background = 'cyan';
-            }   
+            }
         }
         await waitforme(delay);
         swap(ele[min_index], ele[i]);
-        // change the min element index back to normal as it is swapped 
+        // change the min element index back to normal as it is swapped
         ele[min_index].style.background = 'cyan';
         // change the sorted elements color to green
         ele[i].style.background = 'green';
     }
 }
+var audio2 = new Audio('kerusu.mp3');
+audio2.volume = 0.1;
 
 const selectionSortbtn = document.querySelector(".selectionSort");
 selectionSortbtn.addEventListener('click', async function(){
+    audio2.play();
     disableSortingBtn();
     disableSizeSlider();
     disableNewArrayBtn();
@@ -43,4 +46,8 @@ selectionSortbtn.addEventListener('click', async function(){
     enableSortingBtn();
     enableSizeSlider();
     enableNewArrayBtn();
+
+    audio2.pause();
+    audio2.currentTime = 0;
+
 });

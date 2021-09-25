@@ -48,31 +48,31 @@
           </div>
         </nav>
 
-          <div class="col gap-2  sort-button">
-            <button type="button" class="btn btn-lg btn-outline-primary bubbleSort ">Bubble Sort</button>
-            <button type="button" class="btn btn-lg btn-outline-primary selectionSort ">Selection Sort</button>
-            <button type="button" class="btn btn-lg btn-outline-primary insertionSort ">Insertion Sort</button>
-            <button type="button" class="btn btn-lg btn-outline-primary quickSort ">Quick Sort</button>
-            <button type="button" class="btn btn-lg btn-outline-primary mergeSort ">Merge Sort</button>
-          </div>
+        <div class="col gap-2  sort-button">
+          <button type="button" class="btn btn-lg btn-outline-primary play bubbleSort ">Bubble Sort</button>
+          <button type="button" class="btn btn-lg btn-outline-primary play selectionSort ">Selection Sort</button>
+          <button type="button" class="btn btn-lg btn-outline-primary play insertionSort ">Insertion Sort</button>
+          <button type="button" class="btn btn-lg btn-outline-primary play quickSort ">Quick Sort</button>
+          <button type="button" class="btn btn-lg btn-outline-primary play mergeSort ">Merge Sort</button>
+        </div>
         <div class="arraybtn">
-            <button type="button" class="btn btn-lg btn-outline-success newArray ">New Array</button>
+          <button type="button" class="btn btn-lg btn-outline-success newArray ">New Array</button>
         </div>
         <div id="bars" class="flex-container"></div>
       </div>
   </main>
 
   <footer>
-      <p>
-        Created by
-        <a href="https://satyasharma73.github.io/sharma/">Satya Sharma || </a>
-        <a href="https://github.com/1719pankaj">Pankaj Kumar Roy</a>
-        <!-- <a class="anchor" href="https://github.com/SatyaSharma73"><i class="social fa fa-github" aria-hidden="true"></i></a>
+    <p>
+      Created by
+      <a href="https://satyasharma73.github.io/sharma/">Satya Sharma || </a>
+      <a href="https://github.com/1719pankaj">Pankaj Kumar Roy</a>
+      <!-- <a class="anchor" href="https://github.com/SatyaSharma73"><i class="social fa fa-github" aria-hidden="true"></i></a>
         <a class="anchor" href="https://www.linkedin.com/in/-satyasharma/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
         <a class="anchor" href="https://www.instagram.com/_satyasharma_/"><i class="social fa fa-instagram" aria-hidden="true"></i></a> -->
 
-      </p>
-    </footer>
+    </p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   <script src="js_files/sorting.js"></script>
   <script src="js_files/bubble.js"></script>
@@ -80,6 +80,24 @@
   <script src="js_files/merge.js"></script>
   <script src="js_files/quick.js"></script>
   <script src="js_files/selection.js"></script>
+  <script type="text/javascript">
+    //Right Key Disabled
+
+    document.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+      alert('Right Click is Disabled , Please reach Out to the Developer');
+    }, false);
+
+
+    // CTRL + U is disabled
+    document.onkeydown = function(e) {
+      if (e.ctrlKey &&
+        (e.keyCode === 85)) {
+        alert('CTRL + U also Disabled , Please reach Out to the Developer');
+        return false;
+      }
+    };
+  </script>
 </body>
 
 </html>

@@ -1,11 +1,11 @@
 // swap function util for sorting algorithms takes input of 2 DOM elements with .style.height feature
 function swap(el1, el2) {
     console.log('In swap()');
-    
+
     let temp = el1.style.height;
     el1.style.height = el2.style.height;
     el2.style.height = temp;
-    
+
 }
 
 // Disables sorting buttons used in conjunction with enable, so that we can disable during sorting and enable buttons after it
@@ -47,10 +47,10 @@ function enableNewArrayBtn(){
 }
 
 // Used in async function so that we can so animations of sorting, takes input time in ms (1000 = 1s)
-function waitforme(milisec) { 
-    return new Promise(resolve => { 
-        setTimeout(() => { resolve('') }, milisec); 
-    }) 
+function waitforme(milisec) {
+    return new Promise(resolve => {
+        setTimeout(() => { resolve('') }, milisec);
+    })
 }
 
 // Selecting size slider from DOM
@@ -68,7 +68,7 @@ let delay = 260;
 // Selecting speed slider from DOM
 let delayElement = document.querySelector('#speed_input');
 
-// Event listener to update delay time 
+// Event listener to update delay time
 delayElement.addEventListener('input', function(){
     console.log(delayElement.value, typeof(delayElement.value));
     delay = 320 - parseInt(delayElement.value);
@@ -85,7 +85,7 @@ function createNewArray(noOfBars = 60) {
     // calling helper function to delete old bars from dom
     deleteChild();
 
-    // creating an array of random numbers 
+    // creating an array of random numbers
     array = [];
     for (let i = 0; i < noOfBars; i++) {
         array.push(Math.floor(Math.random() * 250) + 1);
@@ -120,4 +120,5 @@ newArray.addEventListener("click", function(){
     enableSortingBtn();
     enableSizeSlider();
     createNewArray(arraySize.value);
+    audio.play();
 });
